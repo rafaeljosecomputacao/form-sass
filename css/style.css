@@ -1,4 +1,4 @@
-.main {
+.main-logo, .main {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,10 +112,7 @@ a {
   background-color: #1F1F1F;
 }
 .main-logo {
-  display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
   margin-top: 16px;
 }
 .main-image {
@@ -128,6 +125,10 @@ a {
 }
 .main-brand span {
   font-weight: 700;
+}
+
+#main-button-send {
+  margin: 16px 0 32px;
 }
 
 /* Responsive */
