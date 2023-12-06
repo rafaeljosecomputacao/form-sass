@@ -1,4 +1,8 @@
 @import 'variables'
+@import 'plugins'
+@import 'mixins'
+@import 'input'
+@import 'button'
 
 /* General
 *
@@ -6,7 +10,14 @@
     font-weight: $font-weight-regular
     
 body
-    background-color: $background-color
+    margin: 0
+
+input,
+button
+    border-radius: 0
+
+a
+    text-decoration: none
 
 /* Utilities
 .primary-color
@@ -20,3 +31,66 @@ body
 
 .dark-color
     color: $dark-color
+
+/* Main
+.main
+    background-image: url("../img/banner.jpg")
+    background-position: center
+    background-size: cover
+    width: 100%
+    height: 100vh
+    @extend %base-div-center
+
+    &-container
+        background-color: $background-color
+        width: 100%
+        margin: 0 $medium-spacing
+        padding: $large-spacing $medium-spacing
+        @include border
+            
+    &-title
+        @include title
+
+    &-form
+        display: flex
+        flex-direction: column 
+
+    &-label
+        @include label
+
+    &-input
+        @include custom-input
+        margin-bottom: $medium-spacing
+
+    &-link
+        @include link
+
+    &-button
+        @include custom-button
+        margin: $large-spacing 0
+
+    &-logo 
+        @extend %base-div-center
+        flex-direction: row
+        margin-top: $medium-spacing
+
+    &-image 
+        width: 30px
+        height: 30px
+
+    &-brand
+        font-weight: $font-weight-bold   
+        margin-left: $small-spacing
+
+        span
+            font-weight: $font-weight-bold
+
+/* Responsive
+@media screen and ( min-width: $tablet-width )
+    .main-container
+        width: 50%
+
+@media screen and ( min-width: $desktop-width )
+    .main-container
+        width: 30%
+ 

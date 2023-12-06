@@ -1,0 +1,23 @@
+@mixin border($width: 2px, $style: solid, $color: $secondary-color)
+    border: $width $style $color 
+
+@mixin title
+    font-size: $font-size-title
+    font-weight: $font-weight-bold
+    text-transform: uppercase
+    text-align: center
+    margin: 0 0 $large-spacing
+
+@mixin label
+    font-size: $font-size-text
+    text-align: left  
+    margin-bottom: 4px
+
+@mixin link
+    font-size: 14px
+    transition: .5s
+    text-align: center
+
+    &:hover
+        color: $dark-color
+    
