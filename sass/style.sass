@@ -45,7 +45,7 @@ a
         background-color: $background-color
         width: 100%
         margin: 0 $medium-spacing
-        padding: $large-spacing $medium-spacing
+        padding: $medium-spacing
         @include border
             
     &-title
@@ -69,6 +69,9 @@ a
         @include custom-button
         margin: $large-spacing 0
 
+        &-margin
+            margin: $medium-spacing 0 $large-spacing
+
     &-logo 
         @extend %base-div-center
         flex-direction: row
@@ -84,9 +87,6 @@ a
 
         span
             font-weight: $font-weight-bold
-
-#main-button-send
-    margin: $medium-spacing 0 $large-spacing
 
 /* Responsive
 @media screen and ( min-width: $tablet-width )

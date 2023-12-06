@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register Page">
+    <meta name="keywords" content="form, register">
     <title>Register</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    
+    <main class="main">
+        <div class="main-container">
+            <h1 class="main-title primary-color">Register</h1>
+            <form class="main-form">
+                <label for="email" class="main-label dark-color">Email</label>
+                <input type="email" class="main-input" id="email" placeholder="Enter your email">
+                <label for="username" class="main-label dark-color">Username</label>
+                <input type="text" class="main-input" id="username" placeholder="Enter your username">
+                <label for="password" class="main-label dark-color">Password</label>
+                <input type="password" class="main-input" id="password" placeholder="Enter your password">
+                <label for="confirm-password" class="main-label dark-color">Confirm Password</label>
+                <input type="password" class="main-input" id="confirm-password" placeholder="Confirm your password">
+                <button type="submit" class="main-button main-button-margin">Register</button>
+                <a href="login.html" class="main-link primary-color">I already have an account</a>
+            </form>
+            <div class="main-logo">
+                <img src="../img/logo.png" alt="Logo" class="main-image">
+                <h5 class="main-brand dark-color"><span class="primary-color">Farm</span>System</h5>
+            </div>        
+        </div>
+    </main>       
 </body>
 </html>
